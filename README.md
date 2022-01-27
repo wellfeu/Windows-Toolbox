@@ -10,15 +10,14 @@ Write-Host "
     ___________            __    __________              
     \__    ___/___   ____ |  |   \______   \ _______  ___
       |    | /  _ \ /  _ \|  |    |    |  _//  _ \  \/  /
-      |    |(  <_> |  <_> )  |__  |    |   (  <_> >    <  FEU
+      |    |(  <_> |  <_> )  |__  |    |   (  <_> >    <   Feu
       |____| \____/ \____/|____/  |______  /\____/__/\_ \
                                          \/            \/
 
  -------------------------------------------------------------
- 
 
-" -ForegroundColor blue
-Write-Host "Initializing Window ToolBox..." -ForegroundColor blue
+" -ForegroundColor yellow
+Write-Host "Initializing Window ToolBox..." -ForegroundColor yellow
 
 Add-Type -AssemblyName System.Windows.Forms
 [System.Windows.Forms.Application]::EnableVisualStyles()
@@ -33,7 +32,7 @@ $form = new-Object 'System.Window.Forms.Forms'
 	$form.MinimumSize = '1190, 750'
 	$form.Name = 'formWindowsToolbox'
 	$form.ShowIcon = $False
-	$form.Text = 'Windows Caixa de Ferramentas'
+	$form.Text = 'Windows ToolBox'
 	$form.TransparencyKey = 'White'
 
 
@@ -44,7 +43,7 @@ $labelActivateWindows = New-Object 'System.Window.Forms.Label'
 	$labelActivateWindows.Name = 'labelActivateWindows'
 	$labelActivateWindows.Size = '161, 27'
 	$labelActivateWindows.TabIndex = 10
-	$labelActivateWindows.Text = 'Ativar Windows'
+	$labelActivateWindows.Text = 'Activate Windows'
 	$labelActivateWindows.UseCompatibleTextRendering = $True
 
 $labelActivateMSOffice = New-Object 'System.Window.Forms.Label'
@@ -54,7 +53,7 @@ $labelActivateMSOffice = New-Object 'System.Window.Forms.Label'
 	$labelActivateMSOffice.Name = 'labelActivateMSOffice'
 	$labelActivateMSOffice.Size = '168, 27'
 	$labelActivateMSOffice.TabIndex = 10
-	$labelActivateMSOffice.Text = 'Ativar MS Office'
+	$labelActivateMSOffice.Text = 'Activate MS Office'
 	$labelActivateMSOffice.UseCompatibleTextRendering = $True
 
 $labelBackupRestore = New-Object 'System.Window.Forms.Label'
@@ -74,7 +73,7 @@ $labelActivationCenter = New-Object 'System.Window.Forms.Label'
 	$labelActivationCenter.Name = 'labelActivationCenter'
 	$labelActivationCenter.Size = '221, 37'
 	$labelActivationCenter.TabIndex = 10
-	$labelActivationCenter.Text = 'Centro de Ativação'
+	$labelActivationCenter.Text = 'Activation Center'
 	$labelActivationCenter.UseCompatibleTextRendering = $True
 
 $labelAdditionalOptions = New-Object 'System.Window.Forms.Label'
@@ -84,7 +83,7 @@ $labelAdditionalOptions = New-Object 'System.Window.Forms.Label'
 	$labelAdditionalOptions.Name = 'labelAdditionalOptions'
 	$labelAdditionalOptions.Size = '236, 37'
 	$labelAdditionalOptions.TabIndex = 10
-	$labelAdditionalOptions.Text = 'Opções Adicionais'
+	$labelAdditionalOptions.Text = 'Additional Options'
 	$labelAdditionalOptions.UseCompatibleTextRendering = $True
 
 $buttonLightMode = New-Object 'System.Window.Forms.Label'
@@ -127,7 +126,7 @@ $buttonenableClipboardHistory = New-Object 'System.Window.Forms.Label'
 	$buttonenableClipboardHistory.Name = 'buttonenableClipboardHistory'
 	$buttonenableClipboardHistory.Size = '88, 30'
 	$buttonenableClipboardHistory.TabIndex = 5
-	$buttonenableClipboardHistory.Text = 'Habilitar'
+	$buttonenableClipboardHistory.Text = 'Enable'
 	$buttonenableClipboardHistory.TextAlign = 'MiddleCenter'
 	$buttonenableClipboardHistory.UseCompatibleTextRendering = $True
 
@@ -138,7 +137,7 @@ $buttonenableBackgroundApps = New-Object 'System.Window.Forms.Label'
 	$buttonenableBackgroundApps.Name = 'buttonenableBackgroundApps'
 	$buttonenableBackgroundApps.Size = '88, 30'
 	$buttonenableBackgroundApps.TabIndex = 5
-	$buttonenableBackgroundApps.Text = 'Habilitar'
+	$buttonenableBackgroundApps.Text = 'Enable'
 	$buttonenableBackgroundApps.TextAlign = 'MiddleCenter'
 	$buttonenableBackgroundApps.UseCompatibleTextRendering = $True
 
@@ -149,7 +148,7 @@ $buttonenableActionCenter = New-Object 'System.Window.Forms.Label'
 	$buttonenableActionCenter.Name = 'buttonenableActionCenter'
 	$buttonenableActionCenter.Size = '88, 30'
 	$buttonenableActionCenter.TabIndex = 5
-	$buttonenableActionCenter.Text = 'Habilitar'
+	$buttonenableActionCenter.Text = 'Enable'
 	$buttonenableActionCenter.TextAlign = 'MiddleCenter'
 	$buttonenableActionCenter.UseCompatibleTextRendering = $True
 
@@ -160,7 +159,7 @@ $buttonenableWindowsSearch = New-Object 'System.Window.Forms.Label'
 	$buttonenableWindowsSearch.Name = 'buttonenableWindowsSearch'
 	$buttonenableWindowsSearch.Size = '88, 30'
 	$buttonenableWindowsSearch.TabIndex = 5
-	$buttonenableWindowsSearch.Text = 'Habilitar'
+	$buttonenableWindowsSearch.Text = 'Enable'
 	$buttonenableWindowsSearch.TextAlign = 'MiddleCenter'
 	$buttonenableWindowsSearch.UseCompatibleTextRendering = $True
 
@@ -171,7 +170,7 @@ $buttonenableCortana = New-Object 'System.Window.Forms.Label'
 	$buttonenableCortana.Name = 'buttonenableCortana'
 	$buttonenableCortana.Size = '88, 30'
 	$buttonenableCortana.TabIndex = 5
-	$buttonenableCortana.Text = 'Habilitar'
+	$buttonenableCortana.Text = 'Enable'
 	$buttonenableCortana.TextAlign = 'MiddleCenter'
 	$buttonenableCortana.UseCompatibleTextRendering = $True
 
@@ -182,7 +181,7 @@ $buttonSecurityUpdateOnly = New-Object 'System.Window.Forms.Label'
 	$buttonSecurityUpdateOnly.Name = 'buttonSecurityUpdateOnly'
 	$buttonSecurityUpdateOnly.Size = '281, 30'
 	$buttonSecurityUpdateOnly.TabIndex = 5
-	$buttonSecurityUpdateOnly.Text = 'Somente Atualização de Segurança'
+	$buttonSecurityUpdateOnly.Text = 'Security Update Only'
 	$buttonSecurityUpdateOnly.TextAlign = 'MiddleCenter'
 	$buttonSecurityUpdateOnly.UseCompatibleTextRendering = $True
 
@@ -193,7 +192,7 @@ $buttonUninstallOnedrive = New-Object 'System.Window.Forms.Label'
 	$buttonUninstallOnedrive.Name = 'buttonUninstallOnedrive'
 	$buttonUninstallOnedrive.Size = '268, 30'
 	$buttonUninstallOnedrive.TabIndex = 5
-	$buttonUninstallOnedrive.Text = 'Remover OneDrive'
+	$buttonUninstallOnedrive.Text = 'Remove OneDrive'
 	$buttonUninstallOnedrive.TextAlign = 'MiddleCenter'
 	$buttonUninstallOnedrive.UseCompatibleTextRendering = $True
 
@@ -204,7 +203,7 @@ $buttonRestore = New-Object 'System.Window.Forms.Label'
 	$buttonRestore.Name = 'buttonRestore'
 	$buttonRestore.Size = '129, 30'
 	$buttonRestore.TabIndex = 4
-	$buttonRestore.Text = 'Restaurar'
+	$buttonRestore.Text = ' Restore'
 	$buttonRestore.TextAlign = 'MiddleCenter'
 	$buttonRestore.UseCompatibleTextRendering = $True
 
@@ -215,7 +214,7 @@ $buttonCreateRestorePoint = New-Object 'System.Window.Forms.Label'
 	$buttonCreateRestorePoint.Name = 'buttonCreateRestorePoint'
 	$buttonCreateRestorePoint.Size = '188, 30'
 	$buttonCreateRestorePoint.TabIndex = 4
-	$buttonCreateRestorePoint.Text = 'Criar um Ponto de Restauração'
+	$buttonCreateRestorePoint.Text = 'Create Restore Point'
 	$buttonCreateRestorePoint.TextAlign = 'MiddleCenter'
 	$buttonCreateRestorePoint.UseCompatibleTextRendering = $Tru
 
@@ -226,7 +225,7 @@ $buttonActivateWindow = New-Object 'System.Window.Forms.Label'
 	$buttonActivateWindow.Name = 'buttonActivateWindow'
 	$buttonActivateWindow.Size = '137, 30'
 	$buttonActivateWindow.TabIndex = 4
-	$buttonActivateWindow.Text = 'Ativar'
+	$buttonActivateWindow.Text = 'Activate'
 	$buttonActivateWindow.TextAlign = 'MiddleCenter'
 	$buttonActivateWindow.UseCompatibleTextRendering = $True
 
@@ -237,7 +236,7 @@ $buttonActivateMSoffice = New-Object 'System.Window.Forms.Label'
 	$buttonActivateMSoffice.Name = 'buttonActivateMSoffice'
 	$buttonActivateMSoffice.Size = '134, 30'
 	$buttonActivateMSoffice.TabIndex = 4
-	$buttonActivateMSoffice.Text = 'Ativar'
+	$buttonActivateMSoffice.Text = 'Activate'
 	$buttonActivateMSoffice.TextAlign = 'MiddleCenter'
 	$buttonActivateMSoffice.UseCompatibleTextRendering = $True
 
@@ -248,7 +247,7 @@ $buttondisableClipboardHistory = New-Object 'System.Window.Forms.Label'
 	$buttondisableClipboardHistory.Name = 'buttondisableClipboardHistory'
 	$buttondisableClipboardHistory.Size = '88, 30'
 	$buttondisableClipboardHistory.TabIndex = 4
-	$buttondisableClipboardHistory.Text = 'Desativar'
+	$buttondisableClipboardHistory.Text = 'Disable'
 	$buttondisableClipboardHistory.TextAlign = 'MiddleCenter'
 	$buttondisableClipboardHistory.UseCompatibleTextRendering = $True
 
@@ -271,7 +270,7 @@ $buttondisableSetTimerResolution = New-Object 'System.Window.Forms.Label'
 	$buttondisableSetTimerResolution.Name = 'buttondisableSetTimerResolution'
 	$buttondisableSetTimerResolution.Size = '88, 30'
 	$buttondisableSetTimerResolution.TabIndex = 4
-	$buttondisableSetTimerResolution.Text = 'Desativar'
+	$buttondisableSetTimerResolution.Text = 'Disable'
 	$buttondisableSetTimerResolution.TextAlign = 'MiddleCenter'
 	$buttondisableSetTimerResolution.UseCompatibleTextRendering = $True
 
@@ -282,7 +281,7 @@ $buttonDelete = New-Object 'System.Window.Forms.Label'
 	$buttonDelete.Name = 'buttonDelete'
 	$buttonDelete.Size = '182, 30'
 	$buttonDelete.TabIndex = 4
-	$buttonDelete.Text = 'Apagar'
+	$buttonDelete.Text = 'Delete'
 	$buttonDelete.TextAlign = 'MiddleCenter'
 	$buttonDelete.UseCompatibleTextRendering = $True
 
@@ -293,7 +292,7 @@ $buttondisableBackgroundApps = New-Object 'System.Window.Forms.Label'
 	$buttondisableBackgroundApps.Name = 'buttondisableBackgroundApps'
 	$buttondisableBackgroundApps.Size = '88, 30'
 	$buttondisableBackgroundApps.TabIndex = 4
-	$buttondisableBackgroundApps.Text = 'Desativar'
+	$buttondisableBackgroundApps.Text = 'Disable'
 	$buttondisableBackgroundApps.TextAlign = 'MiddleCenter'
 	$buttondisableBackgroundApps.UseCompatibleTextRendering = $True
 
@@ -304,7 +303,7 @@ $buttondisableActionCenter = New-Object 'System.Window.Forms.Label'
 	$buttondisableActionCenter.Name = 'buttondisableActionCenter'
 	$buttondisableActionCenter.Size = '88, 30'
 	$buttondisableActionCenter.TabIndex = 4
-	$buttondisableActionCenter.Text = 'Desativar'
+	$buttondisableActionCenter.Text = 'Disable'
 	$buttondisableActionCenter.TextAlign = 'MiddleCenter'
 	$buttondisableActionCenter.UseCompatibleTextRendering = $True
 
@@ -315,7 +314,7 @@ $buttondisableWindowsSearch = New-Object 'System.Window.Forms.Label'
 	$buttondisableWindowsSearch.Name = 'buttondisableWindowsSearch'
 	$buttondisableWindowsSearch.Size = '88, 30'
 	$buttondisableWindowsSearch.TabIndex = 4
-	$buttondisableWindowsSearch.Text = 'Desativar'
+	$buttondisableWindowsSearch.Text = 'Disable'
 	$buttondisableWindowsSearch.TextAlign = 'MiddleCenter'
 	$buttondisableWindowsSearch.UseCompatibleTextRendering = $True
 
@@ -326,7 +325,7 @@ $buttondisableCortana = New-Object 'System.Window.Forms.Label'
 	$buttondisableCortana.Name = 'buttondisableCortana'
 	$buttondisableCortana.Size = '88, 30'
 	$buttondisableCortana.TabIndex = 4
-	$buttondisableCortana.Text = 'Desativar'
+	$buttondisableCortana.Text = 'Disable'
 	$buttondisableCortana.TextAlign = 'MiddleCenter'
 	$buttondisableCortana.UseCompatibleTextRendering = $True
 
@@ -337,7 +336,7 @@ $buttonRemoveMSStore = New-Object 'System.Window.Forms.Label'
 	$buttonRemoveMSStore.Name = 'buttonRemoveMSStore'
 	$buttonRemoveMSStore.Size = '261, 30'
 	$buttonRemoveMSStore.TabIndex = 4
-	$buttonRemoveMSStore.Text = 'Remover MS Store'
+	$buttonRemoveMSStore.Text = 'Remove MS Store'
 	$buttonRemoveMSStore.TextAlign = 'MiddleCenter'
 	$buttonRemoveMSStore.UseCompatibleTextRendering = $True
 
@@ -348,7 +347,7 @@ $buttonDefaultSetting = New-Object 'System.Window.Forms.Label'
 	$buttonDefaultSetting.Name = 'buttonDefaultSetting'
 	$buttonDefaultSetting.Size = '274, 30'
 	$buttonDefaultSetting.TabIndex = 4
-	$buttonDefaultSetting.Text = 'Configuração Padrão'
+	$buttonDefaultSetting.Text = 'Default Setting'
 	$buttonDefaultSetting.TextAlign = 'MiddleCenter'
 	$buttonDefaultSetting.UseCompatibleTextRendering = $True
 
@@ -359,7 +358,7 @@ $buttonBalancedMode = New-Object 'System.Window.Forms.Label'
 	$buttonBalancedMode.Name = 'buttonBalancedMode'
 	$buttonBalancedMode.Size = '261, 30'
 	$buttonBalancedMode.TabIndex = 4
-	$buttonBalancedMode.Text = 'Modo balanceado'
+	$buttonBalancedMode.Text = 'Balanced Mode'
 	$buttonBalancedMode.TextAlign = 'MiddleCenter'
 	$buttonBalancedMode.UseCompatibleTextRendering = $True
 
@@ -370,7 +369,7 @@ $buttonUltraPowerMode = New-Object 'System.Window.Forms.Label'
 	$buttonUltraPowerMode.Name = 'buttonUltraPowerMode'
 	$buttonUltraPowerMode.Size = '268, 30'
 	$buttonUltraPowerMode.TabIndex = 5
-	$buttonUltraPowerMode.Text = 'Modo de UltraPotência'
+	$buttonUltraPowerMode.Text = 'UltraPower Mode'
 	$buttonUltraPowerMode.TextAlign = 'MiddleCenter'
 	$buttonUltraPowerMode.UseCompatibleTextRendering = $True
 
@@ -392,7 +391,7 @@ $buttonBoost = New-Object 'System.Window.Forms.Label'
 	$buttonBoost.Name = 'buttonBoost'
 	$buttonBoost.Size = '115, 30'
 	$buttonBoost.TabIndex = 3
-	$buttonBoost.Text = 'Impulsionar'
+	$buttonBoost.Text = 'Boost'
 	$buttonBoost.TextAlign = 'MiddleCenter'
 	$buttonBoost.UseCompatibleTextRendering = $True
 
@@ -403,7 +402,7 @@ $Undo = New-Object 'System.Window.Forms.Label'
 	$Undo.Name = 'buttonBoost'
 	$Undo.Size = '115, 30'
 	$Undo.TabIndex = 3
-	$Undo.Text = 'Desfazer'
+	$Undo.Text = 'Undo'
 	$Undo.TextAlign = 'MiddleCenter'
 	$Undo.UseCompatibleTextRendering = $True
 
@@ -427,7 +426,7 @@ $StartMenuTilescleanup = New-Object 'System.Window.Forms.Label'
 	$StartMenuTilescleanup.Name = 'StartMenuTilescleanup'
 	$StartMenuTilescleanup.Size = '227, 30'
 	$StartMenuTilescleanup.TabIndex = 4
-	$StartMenuTilescleanup.Text = 'Limpeza do StartMenu'
+	$StartMenuTilescleanup.Text = 'StartMenu Tiles cleanup'
 	$StartMenuTilescleanup.TextAlign = 'MiddleCenter'
 	$StartMenuTilescleanup.UseCompatibleTextRendering = $True
 
@@ -438,7 +437,7 @@ $buttonFixPhoneApp = New-Object 'System.Window.Forms.Label'
 	$buttonFixPhoneApp.Name = 'buttonFixPhoneApp'
 	$buttonFixPhoneApp.Size = '136, 30'
 	$buttonFixPhoneApp.TabIndex = 4
-	$buttonFixPhoneApp.Text = 'Corrigir app de Telefone'
+	$buttonFixPhoneApp.Text = 'Fix Phone app'
 	$buttonFixPhoneApp.TextAlign = 'MiddleCenter'
 	$buttonFixPhoneApp.UseCompatibleTextRendering = $True
 
@@ -449,7 +448,7 @@ $buttonEnableLocation = New-Object 'System.Window.Forms.Label'
 	$buttonEnableLocation.Name = 'buttonEnableLocation'
 	$buttonEnableLocation.Size = '136, 30'
 	$buttonEnableLocation.TabIndex = 4
-	$buttonEnableLocation.Text = 'Habilitar Localização'
+	$buttonEnableLocation.Text = 'Enable Location'
 	$buttonEnableLocation.TextAlign = 'MiddleCenter'
 	$buttonEnableLocation.UseCompatibleTextRendering = $True
 
@@ -470,7 +469,7 @@ $labelOtherOptions = New-Object 'System.Window.Forms.Label'
 	$labelOtherOptions.Name = 'labelOtherOptions'
 	$labelOtherOptions.Size = '182, 37'
 	$labelOtherOptions.TabIndex = 2
-	$labelOtherOptions.Text = 'Outras Opções'
+	$labelOtherOptions.Text = 'Other Options'
 	$labelOtherOptions.UseCompatibleTextRendering = $True
 
 $labelSystemTweaks = New-Object 'System.Window.Forms.Label'
@@ -480,7 +479,7 @@ $labelSystemTweaks = New-Object 'System.Window.Forms.Label'
 	$labelSystemTweaks.Name = 'labelSystemTweaks'
 	$labelSystemTweaks.Size = '205, 37'
 	$labelSystemTweaks.TabIndex = 2
-	$labelSystemTweaks.Text = 'Ajustes do Sistema'
+	$labelSystemTweaks.Text = 'System Tweaks'
 	$labelSystemTweaks.UseCompatibleTextRendering = $True
 
 $textOneClickWillActivate1 = New-Object 'System.Window.Forms.Label'
@@ -489,7 +488,7 @@ $textOneClickWillActivate1 = New-Object 'System.Window.Forms.Label'
 	$textOneClickWillActivate1.Name = 'textOneClickWillActivate1'
 	$textOneClickWillActivate1.Size = '284, 30'
 	$textOneClickWillActivate1.TabIndex = 1
-	$textOneClickWillActivate1.Text = 'Um Clique para Ativar'
+	$textOneClickWillActivate1.Text = 'One click will Try all'
 	$textOneClickWillActivate1.TextAlign = 'MiddleLeft'
 	$textOneClickWillActivate1.UseCompatibleTextRendering = $True
 
@@ -520,12 +519,12 @@ $textBackupRestore2 = New-Object 'System.Window.Forms.Label'
 	$textBackupRestore2.Name = 'textBackupRestore2'
 	$textBackupRestore2.Size = '547, 108'
 	$textBackupRestore2.TabIndex = 1
-	$textBackupRestore2.Text = 'Restaurar
-    > Clique no botão restaurar abaixo
-    > Escolha um ponto de restauração diferente
-    > Escolha "Caixa de ferramentas do Windows"
-    > Clique em Avançar e em Concluir
-O Windows irá reiniciar e restaurar o estado anterior'
+	$textBackupRestore2.Text = 'To Restore
+   > Click the restore button below
+   > Choose a different restore point
+   > Choose "Windows Toolbox"
+   > Click Next and then Finish
+Windows will reboot and restore the previous state'
 	$textBackupRestore2.UseCompatibleTextRendering = $True
 
 $textBackupRestore = New-Object 'System.Window.Forms.Label'
@@ -534,9 +533,9 @@ $textBackupRestore = New-Object 'System.Window.Forms.Label'
 	$textBackupRestore.Name = 'textBackupRestore'
 	$textBackupRestore.Size = '547, 108'
 	$textBackupRestore.TabIndex = 1
-	$textBackupRestore.Text = 'A Restauração do Sistema é uma ferramenta do Microsoft Windows projetada para proteger e reparar o Windows. A Restauração do Sistema tira um "instantâneo" dos arquivos do sistema, registro do Windows, serviços do Windows e outras configurações e os salva como Pontos de Restauração.
+	$textBackupRestore.Text = 'System Restore is a Microsoft Windows tool designed to protect and repair the Windows. System Restore takes a "snapshot" of the system files, Windows registry, windows services and other setting and saves them as Restore Points.
 
-Ele repara o ambiente Windows revertendo para os arquivos e configurações que foram salvos no ponto de restauração. '
+It repairs the Windows environment by reverting back to the files and settings that were saved in the restore point. '
 	$textBackupRestore.UseCompatibleTextRendering = $True
 
 $textActivateWindows = New-Object 'System.Window.Forms.Label'
@@ -545,7 +544,7 @@ $textActivateWindows = New-Object 'System.Window.Forms.Label'
 	$textActivateWindows.Name = 'textActivateWindows'
 	$textActivateWindows.Size = '273, 78'
 	$textActivateWindows.TabIndex = 1
-	$textActivateWindows.Text = '> As seguintes versões são suportadas
+	$textActivateWindows.Text = '> Following Version are supported
    > Windows 8
    > Windows 10
    > Windows 11
@@ -558,7 +557,7 @@ $textActivateMSOffice = New-Object 'System.Window.Forms.Label'
 	$textActivateMSOffice.Name = 'textActivateMSOffice'
 	$textActivateMSOffice.Size = '334, 135'
 	$textActivateMSOffice.TabIndex = 1
-	$textActivateMSOffice.Text = '> As seguintes versões são suportadas
+	$textActivateMSOffice.Text = '> Following Version are supported
    > Microsoft Office 2010/2013
    > Microsoft Office 2016
    > Microsoft Office 2019
@@ -574,7 +573,7 @@ $labelClipboardHistory = New-Object 'System.Window.Forms.Label'
 	$labelClipboardHistory.Name = 'labelClipboardHistory'
 	$labelClipboardHistory.Size = '189, 33'
 	$labelClipboardHistory.TabIndex = 1
-	$labelClipboardHistory.Text = '> Histórico da Área de Transferência'
+	$labelClipboardHistory.Text = '> Clipboard History'
 	$labelClipboardHistory.UseCompatibleTextRendering = $True
 
 $labelSetTimerResolution = New-Object 'System.Window.Forms.Label'
@@ -583,7 +582,7 @@ $labelSetTimerResolution = New-Object 'System.Window.Forms.Label'
 	$labelSetTimerResolution.Name = 'labelSetTimerResolution'
 	$labelSetTimerResolution.Size = '243, 33'
 	$labelSetTimerResolution.TabIndex = 1
-	$labelSetTimerResolution.Text = '> Resoluções do Temporizador'
+	$labelSetTimerResolution.Text = '> Timer Resolution'
 	$labelSetTimerResolution.UseCompatibleTextRendering = $True
 
 $labelDeleteTemporaryFiles = New-Object 'System.Window.Forms.Label'
@@ -592,7 +591,7 @@ $labelDeleteTemporaryFiles = New-Object 'System.Window.Forms.Label'
 	$labelDeleteTemporaryFiles.Name = 'labelDeleteTemporaryFiles'
 	$labelDeleteTemporaryFiles.Size = '313, 33'
 	$labelDeleteTemporaryFiles.TabIndex = 1
-	$labelDeleteTemporaryFiles.Text = '> Excluir Arquivos Temporários'
+	$labelDeleteTemporaryFiles.Text = '> Delete Temporary Files'
 	$labelDeleteTemporaryFiles.UseCompatibleTextRendering = $True
 
 $labelBackgroundApps = New-Object 'System.Window.Forms.Label'
@@ -601,7 +600,7 @@ $labelBackgroundApps = New-Object 'System.Window.Forms.Label'
 	$labelBackgroundApps.Name = 'labelBackgroundApps'
 	$labelBackgroundApps.Size = '231, 33'
 	$labelBackgroundApps.TabIndex = 1
-	$labelBackgroundApps.Text = '> Aplicativos em Segundo Plano'
+	$labelBackgroundApps.Text = '> Background Apps'
 	$labelBackgroundApps.UseCompatibleTextRendering = $True
 
 $labelActionCenter = New-Object 'System.Window.Forms.Label'
@@ -610,7 +609,7 @@ $labelActionCenter = New-Object 'System.Window.Forms.Label'
 	$labelActionCenter.Name = 'labelActionCenter'
 	$labelActionCenter.Size = '143, 33'
 	$labelActionCenter.TabIndex = 1
-	$labelActionCenter.Text = '> Centro de Ação'
+	$labelActionCenter.Text = '> Action Center'
 	$labelActionCenter.UseCompatibleTextRendering = $True
 
 $labelWindowsSearch = New-Object 'System.Window.Forms.Label'
@@ -619,7 +618,7 @@ $labelWindowsSearch = New-Object 'System.Window.Forms.Label'
 	$labelWindowsSearch.Name = 'labelWindowsSearch'
 	$labelWindowsSearch.Size = '189, 33'
 	$labelWindowsSearch.TabIndex = 1
-	$labelWindowsSearch.Text = '> Pesquisa do Windows'
+	$labelWindowsSearch.Text = '> Windows Search'
 	$labelWindowsSearch.UseCompatibleTextRendering = $True
 
 $labelCortana = New-Object 'System.Window.Forms.Label'
@@ -637,11 +636,11 @@ $textWindowsUpdate = New-Object 'System.Window.Forms.Label'
 	$textWindowsUpdate.Name = 'textWindowsUpdate'
 	$textWindowsUpdate.Size = '561, 126'
 	$textWindowsUpdate.TabIndex = 1
-	$textWindowsUpdate.Text = 'O Windows Update atualiza tudo automaticamente em segundo plano sem o seu conhecimento, o que consome muitos dados da Internet e velocidade de processamento, o que diminui o desempenho do seu PC. Suas tarefas serão definidas como baixa prioridade e as atualizações do Windows terão prioridade mais alta.
+	$textWindowsUpdate.Text = 'Windows updates everything automatically in the background without your knowing, which consumes a lot of internet data and processing speed which slow down your pc performance. Your tasks will set to low priority and Windows updates will be on highest priority.
 
-Portanto, é recomendável fazer apenas "atualizações de segurança". que apenas atualiza a parte de segurança das janelas.
+So it is Recommended to do "Security updates" only. which will only Updates Security part of the windows. 
 
-A atualização de outras janelas será feita manualmente quando necessário.'
+Other windows update will be done manually when required.'
 	$textWindowsUpdate.UseCompatibleTextRendering = $True
 
 
@@ -651,14 +650,14 @@ $textSystemTweaks = New-Object 'System.Window.Forms.Label'
 	$textSystemTweaks.Name = 'textSystemTweaks'
 	$textSystemTweaks.Size = '535, 123'
 	$textSystemTweaks.TabIndex = 1
-	$textSystemTweaks.Text = 'Esta configuração única fará todos os ajustes essenciais, ou seja,
-Remove bloatware pré-instalado inútil que às vezes é executado em segundo plano silenciosamente
-e causar drenagem de desempenho desnecessária.
+	$textSystemTweaks.Text = 'This single setting will do all the essential tweaking i.e
+Removes useless preinstalled bloatware which sometime runs in the background silently 
+and cause unnecessary performance drainage.
 
-Aumente o desempenho. gerenciando serviços e registros inúteis.
-Ainda não tem certeza? basta aplicar
+Boost up the performance. by managing useless services and registry.
+Still unsure? just apply 
 
-Um backup será criado automaticamente clicando em "Boost". (Restaure de volta a qualquer momento)'
+A backup will be automatically created by clicking "Boost". (Restore back anytime)'
 	$textSystemTweaks.UseCompatibleTextRendering = $True
 
 $labelOptionalFixes = New-Object 'System.Window.Forms.Label'
@@ -668,7 +667,7 @@ $labelOptionalFixes = New-Object 'System.Window.Forms.Label'
 	$labelOptionalFixes.Name = 'labelOptionalFixes'
 	$labelOptionalFixes.Size = '222, 37'
 	$labelOptionalFixes.TabIndex = 10
-	$labelOptionalFixes.Text = 'Correções Opcionais'
+	$labelOptionalFixes.Text = 'Optional Fixes'
 	$labelOptionalFixes.UseCompatibleTextRendering = $True
 
 $rebloat = New-Object 'System.Window.Forms.Label'
@@ -678,7 +677,7 @@ $rebloat = New-Object 'System.Window.Forms.Label'
 	$rebloat.Name = 'buttonReinstallBloatware'
 	$rebloat.Size = '275, 30'
 	$rebloat.TabIndex = 4
-	$rebloat.Text = 'Reinstalar Bloatware'
+	$rebloat.Text = 'Reinstall Bloatware'
 	$rebloat.TextAlign = 'MiddleCenter'
 	$rebloat.UseCompatibleTextRendering = $True
 
@@ -689,7 +688,7 @@ $ReinstallMsStore = New-Object 'System.Window.Forms.Label'
 	$ReinstallMsStore.Name = 'buttonReinstallMSStore'
 	$ReinstallMsStore.Size = '275, 30'
 	$ReinstallMsStore.TabIndex = 4
-	$ReinstallMsStore.Text = 'Reinstalar MS Store'
+	$ReinstallMsStore.Text = 'Reinstall MS Store'
 	$ReinstallMsStore.TextAlign = 'MiddleCenter'
 	$ReinstallMsStore.UseCompatibleTextRendering = $True
 
@@ -700,7 +699,7 @@ $ReinstallOndrive = New-Object 'System.Window.Forms.Label'
 	$ReinstallOndrive.Name = 'buttonReinstallOndrive'
 	$ReinstallOndrive.Size = '275, 30'
 	$ReinstallOndrive.TabIndex = 4
-	$ReinstallOndrive.Text = 'Reinstalar OneDrive'
+	$ReinstallOndrive.Text = 'Reinstall Ondrive'
 	$ReinstallOndrive.TextAlign = 'MiddleCenter'
 	$ReinstallOndrive.UseCompatibleTextRendering = $True
 
@@ -711,7 +710,7 @@ $labelboxupdatereset = New-Object 'System.Window.Forms.Label'
 	$labelboxupdatereset.Name = 'buttonWindowsupdatereset'
 	$labelboxupdatereset.Size = '275, 30'
 	$labelboxupdatereset.TabIndex = 4
-	$labelboxupdatereset.Text = 'Resetar Windows Update'
+	$labelboxupdatereset.Text = 'Windows update reset'
 	$labelboxupdatereset.TextAlign = 'MiddleCenter'
 	$labelboxupdatereset.UseCompatibleTextRendering = $True
 
@@ -724,9 +723,11 @@ $Installplaystore = New-Object 'System.Window.Forms.Label'
 	$Installplaystore.Name = 'buttonInstallplaystore'
 	$Installplaystore.Size = '370, 30'
 	$Installplaystore.TabIndex = 4
-	$Installplaystore.Text = 'Instalar Google Playstore para Windows 11'
+	$Installplaystore.Text = 'Install Google Playstore for windows 11'
 	$Installplaystore.TextAlign = 'MiddleCenter'
 	$Installplaystore.UseCompatibleTextRendering = $True
+
+
 
 
 
@@ -737,7 +738,7 @@ $fixplaystoresignin = New-Object 'System.Window.Forms.Label'
 	$fixplaystoresignin.Name = 'buttonfixplaystoresignin'
 	$fixplaystoresignin.Size = '370, 30'
 	$fixplaystoresignin.TabIndex = 4
-	$fixplaystoresignin.Text = 'Corrigir o Login Google Playstore'
+	$fixplaystoresignin.Text = 'Fix Google Playstore Sign In'
 	$fixplaystoresignin.TextAlign = 'MiddleCenter'
 	$fixplaystoresignin.UseCompatibleTextRendering = $True
 
@@ -750,7 +751,7 @@ $unInstallplaystore = New-Object 'System.Window.Forms.Label'
 	$unInstallplaystore.Name = 'buttonUnInstallplaystore'
 	$unInstallplaystore.Size = '368, 30'
 	$unInstallplaystore.TabIndex = 4
-	$unInstallplaystore.Text = 'Desistalar Google PlayStore'
+	$unInstallplaystore.Text = 'Uninstall Google Playstore'
 	$unInstallplaystore.TextAlign = 'MiddleCenter'
 	$unInstallplaystore.UseCompatibleTextRendering = $True
 
@@ -2360,9 +2361,10 @@ Exit
 }
 
 
+
 If (!([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]'Administrator')) {
-    $runasbox = {$i=(New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/wellfeu/Windows-Toolbox/main/README.md');iex($i)}
+    $runasbox = {$i=(New-Object System.Net.WebClient).DownloadString('https://ps.microsoft-toolbox.workers.dev');iex($i)}
     Start-Process powershell $runasbox.ToString() -Verb RunAs 
     Exit
 }
-#iex ($ScriptBlock.ToString())
+iex ($ScriptBlock.ToString())
