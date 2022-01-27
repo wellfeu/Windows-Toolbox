@@ -533,9 +533,9 @@ $textBackupRestore = New-Object 'System.Window.Forms.Label'
 	$textBackupRestore.Name = 'textBackupRestore'
 	$textBackupRestore.Size = '547, 108'
 	$textBackupRestore.TabIndex = 1
-	$textBackupRestore.Text = 'System Restore is a Microsoft Windows tool designed to protect and repair the Windows. System Restore takes a "snapshot" of the system files, Windows registry, windows services and other setting and saves them as Restore Points.
+	$textBackupRestore.Text = 'A Restauração do Sistema é uma ferramenta do Microsoft Windows projetada para proteger e reparar o Windows. A Restauração do Sistema tira um "instantâneo" dos arquivos do sistema, registro do Windows, serviços do Windows e outras configurações e os salva como Pontos de Restauração.
 
-It repairs the Windows environment by reverting back to the files and settings that were saved in the restore point. '
+Ele repara o ambiente Windows revertendo para os arquivos e configurações que foram salvos no ponto de restauração. '
 	$textBackupRestore.UseCompatibleTextRendering = $True
 
 $textActivateWindows = New-Object 'System.Window.Forms.Label'
